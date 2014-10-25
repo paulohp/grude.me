@@ -1,0 +1,23 @@
+{
+  "name": "grude.me",
+  "version": "1.0.0",
+  "description": "app for track your objectives and metas",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulohp/grude.me.git"
+  },
+  "author": "Paulo Pires",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paulohp/grude.me/issues"
+  },
+  "homepage": "https://github.com/paulohp/grude.me",
+  "dependencies": {
+    "hapi": "^7.1.1",
+    "redis": "^0.12.1"
+  }
+}
