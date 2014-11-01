@@ -1,0 +1,10 @@
+doctype html
+html(lang="en")
+  head
+    title= title
+  body
+    form(method="POST", action="/user")
+      input(name="name", type="text", placeholder="Your Name")
+      input(name="email", type="email", placeholder="Your Email")
+      input(name="password", type="password", placeholder="Your Password")
+      input(type="submit", value="Create")
