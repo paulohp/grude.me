@@ -19,6 +19,7 @@
   "dependencies": {
     "appbasejs": "^0.2.2",
     "hapi": "^7.1.1",
+    "jade": "^1.7.0",
     "redis": "^0.12.1"
   }
 }
