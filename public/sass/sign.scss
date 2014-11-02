@@ -1,0 +1,197 @@
+/* Chrome, Safari, Opera */
+@-webkit-keyframes bgtrans {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes bgtrans {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+#sign {
+  background: #efefef;
+  background-size: 100% 100%;
+  font-family: $karbon;
+  min-width: 800px;
+  display: table;
+
+  .wrapper{
+    padding:0;
+    text-align: center;
+  }
+
+  p.confirm{
+    color: $dark-gray;
+    text-align: left;
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: 1.2em;
+  }
+
+  .error-box {
+    width: 600px;
+    margin-top: 5%;
+  }
+
+  //BOX DE SIGN IN
+  .sign-box {
+    display: block;
+    width: 385px;
+    margin: 0 auto 0 auto;
+    -webkit-animation: bgtrans 2s; /* Chrome, Safari, Opera */
+    animation: bgtrans 2s;
+    margin-top: -webkit-calc(20% - 120px);
+    margin-top: -moz-calc(20% - 120px);
+    margin-top: calc(20% - 120px);
+    position: relative;
+    &.signup{
+      margin-top: -webkit-calc(20% - 130px);
+      margin-top: -moz-calc(20% - 130px);
+      margin-top: calc(20% - 130px);
+      input[type='submit'],
+      input[type='button'].submit,
+      a.submit { margin-top: 20px; }
+    }
+  }
+}
+.sign-box,
+.error-box {
+  margin: 0 auto;
+  text-align: center;
+  .part2{
+    display: inline-block;
+    color: $mail-blue;
+  }
+  h2 {
+    color: $dark-gray;
+    font-family: $karbon;
+    font-size: 55px;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  ul.sign-menu {
+    margin: 0;
+    padding: 0;
+
+    li {
+      border-right: 1px solid #ccc;
+      display: inline-block;
+      padding: 0 10px;
+      line-height: 1em;
+
+      &:last-of-type { border-right: none; }
+      a {
+        color: $dark-gray;
+        &:hover { text-decoration: underline; }
+      }
+    }
+  }
+
+  // estilos de formulário
+  form.sign-form {
+    .form-alert {
+      color: red;
+      display: none;
+      &.active { display: block; }
+    }
+
+    .field {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      position: relative;
+
+      input[type='text'],
+      input[type='email'],
+      input[type='password'] {
+        webkit-appearance: none;
+        moz-appearance: none;
+        background-color: #f2f9fd;
+        border:0;
+        box-shadow: 0 0 0 transparent;
+        border-radius: 0;
+        display: block;
+        font-size: 18px;
+        height: 50px;
+        padding: 15px;
+        width: 385px;
+
+        &:disabled { background-color: #f2f2f2; }
+        &:focus { border: 1px solid $base-link-color; }
+      }
+
+      &.error {
+        input[type='text'],
+        input[type='email'],
+        input[type='password'] {
+          background: rgba(red, .05);
+          border-color: red;
+          box-shadow: 0 0 5px 0 rgba(red,.5);
+          color: red;
+        }
+
+        &:after {
+          content: 'x';
+          color: red;
+          font-family: 'worx-icon';
+          font-size: 18px;
+          margin-top: -32px;
+          position: absolute;
+          right: 5px;
+        }
+      }
+    }
+
+    input[type='submit'],
+    input[type='submit'].submit,
+    input[type='button'].submit,
+    a.submit {
+      background-color: transparent;
+      border: 2px solid #828892;
+      border-radius: 20px;
+      color: #828892;
+      cursor: pointer;
+      display: block;
+      height: 40px;
+      font-weight: 400;
+      padding:0;
+      margin: 60px auto 20px auto;
+      width: 145px;
+      font-size: 18px;
+      &:hover {
+        border: 1px solid $mail-blue;
+        color: $mail-blue;
+      }
+      span {
+        font-family: $sans-serif;
+      }
+    }
+  }
+}
+.sign-footer {
+  font-size: 14px;
+  display: block;
+  margin-top: 5;
+  float: right;
+  position: relative;
+  -webkit-animation: bgtrans 2s; /* Chrome, Safari, Opera */
+  animation: bgtrans 2s;
+  a{color: $dark-gray;}
+}
+
+
+// classes genericas
+.bottom-message {
+  position: absolute;
+  float:left;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  bottom: 138px;
+  color: $dark-gray;
+  a{ display: inline-block; margin-left: 5px;}
+}

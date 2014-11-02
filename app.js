@@ -20,7 +20,7 @@ server.route({
   method: 'GET',
   path: '/',
   handler: function (request, reply) {
-    reply.view('index', {
+    reply.view('sessions/new', {
       title: 'examples/views/jade/index.js | Hapi ' + Hapi.version,
       message: 'Index - Hello World!'
     });
