@@ -1,0 +1,14 @@
+include ./includes/head.jade
+
+body(id='sign')
+  .wrapper
+
+    if error
+      .alert.error
+        p #{error}
+
+    if success
+      .alert.success
+        p #{success}
+
+    block content
