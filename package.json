@@ -21,5 +21,15 @@
     "hapi": "^7.1.1",
     "jade": "^1.7.0",
     "redis": "^0.12.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.9",
+    "gulp-nodemon": "^1.0.4",
+    "gulp-plumber": "^0.6.6",
+    "gulp-sass": "^1.2.2",
+    "gulp-watch": "^1.1.0",
+    "mocha": "^2.0.1",
+    "node-sass": "^1.1.4",
+    "nodemon": "^1.2.1"
   }
 }
