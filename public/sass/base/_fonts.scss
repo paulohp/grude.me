@@ -1,0 +1,150 @@
+//open-sans
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic,300italic,600italic);
+
+//karbon
+
+@font-face {
+  font-family: 'karbon';
+  src: url('/fonts/karbon-regular-webfont.eot');
+  src: url('/fonts/karbon-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/karbon-regular-webfont.woff') format('woff'),
+       url('/fonts/karbon-regular-webfont.ttf') format('truetype'),
+       url('/fonts/karbon-regular-webfont.svg#karbon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'karbon';
+  src: url('/fonts/karbon-regularitalic-webfont.eot');
+  src: url('/fonts/karbon-regularitalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/karbon-regularitalic-webfont.woff') format('woff'),
+       url('/fonts/karbon-regularitalic-webfont.ttf') format('truetype'),
+       url('/fonts/karbon-regularitalic-webfont.svg#karbon') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'karbon';
+  src: url('/fonts/karbon-semibold-webfont.eot');
+  src: url('/fonts/karbon-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/karbon-semibold-webfont.woff') format('woff'),
+       url('/fonts/karbon-semibold-webfont.ttf') format('truetype'),
+       url('/fonts/karbon-semibold-webfont.svg#karbon') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'karbon';
+  src: url('/fonts/karbon-semibolditalic-webfont.eot');
+  src: url('/fonts/karbon-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/karbon-semibolditalic-webfont.woff') format('woff'),
+       url('/fonts/karbon-semibolditalic-webfont.ttf') format('truetype'),
+       url('/fonts/karbon-semibolditalic-webfont.svg#karbon') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'karbon';
+  src: url('/fonts/karbon-light-webfont.eot');
+  src: url('/fonts/karbon-light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/karbon-light-webfont.woff') format('woff'),
+       url('/fonts/karbon-light-webfont.ttf') format('truetype'),
+       url('/fonts/karbon-light-webfont.svg#karbon') format('svg');
+  font-weight: 300;
+}
+
+//// MYRIAD SET
+
+@font-face {
+  font-family: 'myriad';
+  src: url('/fonts/myriadsetpro-bold-italic-webfont.eot');
+  src: url('/fonts/myriadsetpro-bold-italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/myriadsetpro-bold-italic-webfont.woff') format('woff'),
+       url('/fonts/myriadsetpro-bold-italic-webfont.ttf') format('truetype'),
+       url('/fonts/myriadsetpro-bold-italic-webfont.svg#karbon') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'myriad';
+  src: url('/fonts/myriadsetpro-bold-webfont.eot');
+  src: url('/fonts/myriadsetpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/myriadsetpro-bold-webfont.woff') format('woff'),
+       url('/fonts/myriadsetpro-bold-webfont.ttf') format('truetype'),
+       url('/fonts/myriadsetpro-bold-webfont.svg#karbon') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'myriad';
+  src: url('/fonts/myriadsetpro-semibold-italic-webfont.eot');
+  src: url('/fonts/myriadsetpro-semibold-italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/myriadsetpro-semibold-italic-webfont.woff') format('woff'),
+       url('/fonts/myriadsetpro-semibold-italic-webfont.ttf') format('truetype'),
+       url('/fonts/myriadsetpro-semibold-italic-webfont.svg#karbon') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'myriad';
+  src: url('/fonts/myriadsetpro-semibold-webfont.eot');
+  src: url('/fonts/myriadsetpro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/myriadsetpro-semibold-webfont.woff') format('woff'),
+       url('/fonts/myriadsetpro-semibold-webfont.ttf') format('truetype'),
+       url('/fonts/myriadsetpro-semibold-webfont.svg#karbon') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'myriad';
+  src: url('/fonts/myriadsetpro-thin-italic-webfont.eot');
+  src: url('/fonts/myriadsetpro-thin-italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/myriadsetpro-thin-italic-webfont.woff') format('woff'),
+       url('/fonts/myriadsetpro-thin-italic-webfont.ttf') format('truetype'),
+       url('/fonts/myriadsetpro-thin-italic-webfont.svg#karbon') format('svg');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'myriad';
+  src: url('/fonts/myriadsetpro-thin-webfont.eot');
+  src: url('/fonts/myriadsetpro-thin-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/myriadsetpro-thin-webfont.woff') format('woff'),
+       url('/fonts/myriadsetpro-thin-webfont.ttf') format('truetype'),
+       url('/fonts/myriadsetpro-thin-webfont.svg#karbon') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'myriad';
+  src: url('/fonts/myriadsetpro-ultralight-italic-webfont.eot');
+  src: url('/fonts/myriadsetpro-ultralight-italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/myriadsetpro-ultralight-italic-webfont.woff') format('woff'),
+       url('/fonts/myriadsetpro-ultralight-italic-webfont.ttf') format('truetype'),
+       url('/fonts/myriadsetpro-ultralight-italic-webfont.svg#karbon') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'myriad';
+  src: url('/fonts/myriadsetpro-ultralight-webfont.eot');
+  src: url('/fonts/myriadsetpro-ultralight-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/myriadsetpro-ultralight-webfont.woff') format('woff'),
+       url('/fonts/myriadsetpro-ultralight-webfont.ttf') format('truetype'),
+       url('/fonts/myriadsetpro-ultralight-webfont.svg#karbon') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}

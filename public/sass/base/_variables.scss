@@ -1,7 +1,11 @@
 // Typography
-$sans-serif: $helvetica;
-$serif: $georgia;
+$karbon: 'karbon';
+$myriad: 'myriad';
+$open-sans: 'Open Sans', sans-serif;
+$sans-serif: $open-sans;
+$sans-serif-light: $open-sans;
 $base-font-family: $sans-serif;
+$serif: 'Georgia';
 $header-font-family: $base-font-family;
 
 // Font Sizes
@@ -24,18 +28,25 @@ $base-z-index: 0;
 
 // Colors
 $blue: #477DCA;
-$dark-gray: #333;
+$dark-blue: #243242;
+$light-blue: #f2f8fe;
+$dark-gray: #343434;
 $medium-gray: #999;
 $light-gray: #DDD;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
+$text-grey: #696969;
+$blue-menu: #243242;
+$mail-blue: #167efc;
+$calendar-red: #ed5f5e;
+$notes-yellow: #f8ba36;
 
 // Background Color
 $base-background-color: white;
 
 // Font Colors
-$base-font-color: $dark-gray;
+$base-font-color: $text-grey;
 $base-accent-color: $blue;
 
 // Link Colors

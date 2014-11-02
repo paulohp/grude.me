@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+/* Viewport */
+html,
+body {
+	width: 100%;
+	overflow-x: hidden;
+}
+
+@viewport {
+	zoom: 1.0;
+	width: extend-to-zoom;
+}
+
+@-ms-viewport {
+	width: extend-to-zoom;
+	zoom: 1.0;
+}
+
+.ipad.ios7 {
+	position: fixed;
+	bottom: 0;
+	width:100%;
+	height: 672px !important;
+}
+
+/*
+Max Width, 1024px
+Media Queries for Landscape iPad
+------------------------------------------------------------------------------*/
+@media (min-width: 1261px) {
+	body#apps {
+		.calendar-view {
+			margin-left: 340px;
+		}
+
+		ul.mini-calendar-wrapper {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+	}
+}
+
+/*
+Max Width, 1024px
+Media Queries for Landscape iPad
+------------------------------------------------------------------------------*/
+@media (max-width: 1260px) {
+	body#apps {
+		.menu {
+			width: 216px;
+			ul.categories {
+				li {
+					padding-left: 30px;
+					padding-right: 30px;
+				}
+			}
+		}
+		
+		.submenu {
+			width: 370px;
+		}
+
+		ul.mini-calendar-wrapper {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+	}
+}
+
+/*
+Max Width, 960px
+Media Queries for Tablets
+------------------------------------------------------------------------------*/
+@media (max-width: 960px) {}
+
+/*
+Max Width, 800px
+Media Queries for Landscape iPad
+------------------------------------------------------------------------------*/
+@media (max-width: 800px) {
+	#main{
+		width: 800px;
+		display:table;
+	}
+	.footer-index ul{
+		width: 100% !important;
+	}
+	.step1,
+	.step2,
+	.step3{
+		h2{
+		font-size: 20px !important;
+		line-height: 20px;
+		}
+	}
+
+	body#home, 
+	body#index
+	{
+		#icons {
+			ul {
+				min-width:730px;
+				display:table;
+				li{
+					float:none;
+				}
+			}
+		}
+	}
+}
+
+/* Webkit Hacks  */
+@media screen and (-webkit-min-device-pixel-ratio:0) {}
+
+/* Fix Mobile Menu */
+@media only screen and (min-width: 687px) {}

@@ -4,6 +4,7 @@
   "description": "app for track your objectives and metas",
   "main": "app.js",
   "scripts": {
+    "start": "gulp",
     "test": "test"
   },
   "repository": {
