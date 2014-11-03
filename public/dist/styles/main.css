@@ -786,3 +786,162 @@ Media Queries for Landscape iPad
 
 /* Webkit Hacks  */
 /* Fix Mobile Menu */
+/* Chrome, Safari, Opera */
+@-webkit-keyframes bgtrans {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+
+/* Standard syntax */
+@keyframes bgtrans {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+
+#sign {
+  background: #efefef;
+  background-size: 100% 100%;
+  font-family: 'karbon';
+  min-width: 800px;
+  display: table; }
+  #sign .wrapper {
+    padding: 0;
+    text-align: center; }
+  #sign p.confirm {
+    color: #343434;
+    text-align: left;
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: 1.2em; }
+  #sign .error-box {
+    width: 600px;
+    margin-top: 5%; }
+  #sign .sign-box {
+    display: block;
+    width: 385px;
+    margin: 0 auto 0 auto;
+    -webkit-animation: bgtrans 2s;
+    /* Chrome, Safari, Opera */
+    animation: bgtrans 2s;
+    margin-top: -webkit-calc(20% - 120px);
+    margin-top: -moz-calc(20% - 120px);
+    margin-top: calc(20% - 120px);
+    position: relative; }
+    #sign .sign-box.signup {
+      margin-top: -webkit-calc(20% - 130px);
+      margin-top: -moz-calc(20% - 130px);
+      margin-top: calc(20% - 130px); }
+      #sign .sign-box.signup input[type='submit'], #sign .sign-box.signup input[type='button'].submit, #sign .sign-box.signup a.submit {
+        margin-top: 20px; }
+
+.sign-box, .error-box {
+  margin: 0 auto;
+  text-align: center; }
+  .sign-box .part2, .error-box .part2 {
+    display: inline-block;
+    color: #167efc; }
+  .sign-box h2, .error-box h2 {
+    color: #343434;
+    font-family: 'karbon';
+    font-size: 55px;
+    font-weight: 300;
+    margin-bottom: 20px; }
+  .sign-box ul.sign-menu, .error-box ul.sign-menu {
+    margin: 0;
+    padding: 0; }
+    .sign-box ul.sign-menu li, .error-box ul.sign-menu li {
+      border-right: 1px solid #ccc;
+      display: inline-block;
+      padding: 0 10px;
+      line-height: 1em; }
+      .sign-box ul.sign-menu li:last-of-type, .error-box ul.sign-menu li:last-of-type {
+        border-right: none; }
+      .sign-box ul.sign-menu li a, .error-box ul.sign-menu li a {
+        color: #343434; }
+        .sign-box ul.sign-menu li a:hover, .error-box ul.sign-menu li a:hover {
+          text-decoration: underline; }
+  .sign-box form.sign-form .form-alert, .error-box form.sign-form .form-alert {
+    color: red;
+    display: none; }
+    .sign-box form.sign-form .form-alert.active, .error-box form.sign-form .form-alert.active {
+      display: block; }
+  .sign-box form.sign-form .field, .error-box form.sign-form .field {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    position: relative; }
+    .sign-box form.sign-form .field input[type='text'], .sign-box form.sign-form .field input[type='email'], .sign-box form.sign-form .field input[type='password'], .error-box form.sign-form .field input[type='text'], .error-box form.sign-form .field input[type='email'], .error-box form.sign-form .field input[type='password'] {
+      webkit-appearance: none;
+      moz-appearance: none;
+      background-color: #f2f9fd;
+      border: 0;
+      box-shadow: 0 0 0 transparent;
+      border-radius: 0;
+      display: block;
+      font-size: 18px;
+      height: 50px;
+      padding: 15px;
+      width: 385px; }
+      .sign-box form.sign-form .field input[type='text']:disabled, .sign-box form.sign-form .field input[type='email']:disabled, .sign-box form.sign-form .field input[type='password']:disabled, .error-box form.sign-form .field input[type='text']:disabled, .error-box form.sign-form .field input[type='email']:disabled, .error-box form.sign-form .field input[type='password']:disabled {
+        background-color: #f2f2f2; }
+      .sign-box form.sign-form .field input[type='text']:focus, .sign-box form.sign-form .field input[type='email']:focus, .sign-box form.sign-form .field input[type='password']:focus, .error-box form.sign-form .field input[type='text']:focus, .error-box form.sign-form .field input[type='email']:focus, .error-box form.sign-form .field input[type='password']:focus {
+        border: 1px solid #477DCA; }
+    .sign-box form.sign-form .field.error input[type='text'], .sign-box form.sign-form .field.error input[type='email'], .sign-box form.sign-form .field.error input[type='password'], .error-box form.sign-form .field.error input[type='text'], .error-box form.sign-form .field.error input[type='email'], .error-box form.sign-form .field.error input[type='password'] {
+      background: rgba(255, 0, 0, 0.05);
+      border-color: red;
+      box-shadow: 0 0 5px 0 rgba(255, 0, 0, 0.5);
+      color: red; }
+    .sign-box form.sign-form .field.error:after, .error-box form.sign-form .field.error:after {
+      content: 'x';
+      color: red;
+      font-family: 'worx-icon';
+      font-size: 18px;
+      margin-top: -32px;
+      position: absolute;
+      right: 5px; }
+  .sign-box form.sign-form input[type='submit'], .sign-box form.sign-form input[type='submit'].submit, .sign-box form.sign-form input[type='button'].submit, .sign-box form.sign-form a.submit, .error-box form.sign-form input[type='submit'], .error-box form.sign-form input[type='submit'].submit, .error-box form.sign-form input[type='button'].submit, .error-box form.sign-form a.submit {
+    background-color: transparent;
+    border: 2px solid #828892;
+    border-radius: 20px;
+    color: #828892;
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    font-weight: 400;
+    padding: 0;
+    margin: 60px auto 20px auto;
+    width: 145px;
+    font-size: 18px; }
+    .sign-box form.sign-form input[type='submit']:hover, .sign-box form.sign-form input[type='submit'].submit:hover, .sign-box form.sign-form input[type='button'].submit:hover, .sign-box form.sign-form a.submit:hover, .error-box form.sign-form input[type='submit']:hover, .error-box form.sign-form input[type='submit'].submit:hover, .error-box form.sign-form input[type='button'].submit:hover, .error-box form.sign-form a.submit:hover {
+      border: 1px solid #167efc;
+      color: #167efc; }
+    .sign-box form.sign-form input[type='submit'] span, .sign-box form.sign-form input[type='submit'].submit span, .sign-box form.sign-form input[type='button'].submit span, .sign-box form.sign-form a.submit span, .error-box form.sign-form input[type='submit'] span, .error-box form.sign-form input[type='submit'].submit span, .error-box form.sign-form input[type='button'].submit span, .error-box form.sign-form a.submit span {
+      font-family: 'Open Sans', sans-serif; }
+
+.sign-footer {
+  font-size: 14px;
+  display: block;
+  margin-top: 5;
+  float: right;
+  position: relative;
+  -webkit-animation: bgtrans 2s;
+  /* Chrome, Safari, Opera */
+  animation: bgtrans 2s; }
+  .sign-footer a {
+    color: #343434; }
+
+.bottom-message {
+  position: absolute;
+  float: left;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  bottom: 138px;
+  color: #343434; }
+  .bottom-message a {
+    display: inline-block;
+    margin-left: 5px; }
