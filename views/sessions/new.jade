@@ -5,9 +5,9 @@ block content
     | I'm new here.
     a(href="/signup") Sign up.
   .sign-box
-    img(src="/images/logo1.png" alt="WorxNotes")
+    | Grude
 
-    form(action="/login", method="post", class="sign-form")
+    form(action="/user", method="post", class="sign-form")
       p(class="form-alert")
 
       span(class="field")
@@ -17,4 +17,4 @@ block content
       div.sign-footer
         a(href="#") Need help?
 
-      input(type="button" class="submit" onClick="validateSignIn($(this));" value="Sign in")
+      input(type="submit" class="submit" value="Sign in")
