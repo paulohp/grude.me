@@ -1,10 +1,12 @@
-var Hapi = require('hapi');
-var Appbase = require('appbasejs'); // Appbase nodejs module
+var Hapi          = require('hapi');
+var server        = new Hapi.Server('localhost', 8000);
+var Mongoose      = require('mongoose');
+var Boom          = require('boom');                                  // HTTP Errors
+var Joi           = require('joi');                                   // Validation
+var Goals         = require('./models/goal').Goal; // Mongoose ODM
 
-// Setting credentials
-Appbase.credentials('grude', '1a6c9a10870c37b067f22e5dc68baa3f');
-
-var server = new Hapi.Server('localhost', 8000, { cors: true });
+// MongoDB Connection
+Mongoose.connect('mongodb://localhost/grude');
 
 server.views({
   engines: {
@@ -38,17 +40,18 @@ server.route({
   }
 });
 
+// GET /metas
 server.route({
-  method: 'POST',
-  path: '/user',
+  method: 'GET',
+  path: '/goals',
   handler: function (request, reply) {
-    var user = Appbase.ns('user').v(request.payload.email);
-    user.setData(request.payload, function(){
-      reply.view('index', {
-        title: 'examples/views/jade/index.js | Hapi ' + Hapi.version,
-        message: 'Index - Hello World!'
-      });
-    })
+    Goals.find({}, function (err, events) {
+      if (!err) {
+        reply(events);
+      } else {
+        reply(Boom.badImplementation(err)); // 500 error
+      }
+    });
   }
 });
 
